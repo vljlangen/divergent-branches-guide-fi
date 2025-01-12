@@ -7,7 +7,7 @@ output:
       toc:
         scroll_highlight: yes
         before: |
-          <li><a href="https://r-guide-in-english.netlify.app/"><i class="fa fa-language fa-fw"></i> English version<span></span></a></li>
+          <li><a href="https://divergent-branches-en.netlify.app/"><i class="fa fa-language fa-fw"></i> English version<span></span></a></li>
         after: |
           <li><a href="https://bookdown.org/">Proudly published with bookdown</a></li>
 author: Ville Langén
@@ -68,9 +68,10 @@ Ville Langén is licensed under the [CC BY-SA
 ```{js, echo = FALSE}
 title=document.getElementById('header');
 title.innerHTML = title.innerHTML + '<br>' + '<br>' + '<img src="images/cover_photo.jpeg" alt="Test Image">' +
-    '<figcaption style="font-size: 0.9em; color: gray; margin-top: 5px;">' + 'Image credit: <a href="https://www.pexels.com/photo/cherry-blossom-tree-932409/" target="_blank">Pexels</a>' + '</figcaption>' + '<br>' + '<br>' + '<p><em>This e-book is available also <a href="https://r-guide-in-english.netlify.app/" target="_blank">in English.</a></em></p>'
+    '<figcaption style="font-size: 0.9em; color: gray; margin-top: 5px;">' + 'Image credit: <a href="https://www.pexels.com/photo/cherry-blossom-tree-932409/" target="_blank">Pexels</a>' + '</figcaption>' + '<br>' + '<br>' + '<p><em>This e-book is available also <a href="https://divergent-branches-en.netlify.app/">in English.</a></em></p>'
 
 ```
+
 
 
 
