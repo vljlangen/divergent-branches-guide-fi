@@ -1,0 +1,51 @@
+# Hienosäätö: *git diff*
+
+<br><br> <img src="images/fine-tuning.jpg" alt="Test Image" style="max-width: 100%; height: auto;"/>
+
+<figcaption style="font-size: 0.9em; color: gray; margin-top: 5px;">
+
+Image credit: <a href="https://www.pexels.com/photo/man-fixing-clock-mechanism-8327576/" target="_blank">Pexels</a>
+
+</figcaption>
+
+<br><br>
+
+Kuvitellaan tilannetta, jossa tiedosto ´test.R´ on samanlainen sekä etähakemistossa että paikallisessa hakemistossa, mutta tiedostossa ´test2.R´ on näiden välillä eroja. Tämän kaltainen asetelma on kuvattu edellä osiossa \@ref(alkutilanne).
+
+Jos Git-haarojen välillä esiintyy ristiriitoja commit- ja push -toimintoa tehdessä, Gitin käyttäjä voi tehdä tilanteesta lisäselvityksiä. Paikallisen Git-haaran ja etähakemiston välillä esiintyviä eroja on mahdollista tarkastella tarkemmin seuraavilla  komennoilla:
+
+\
+
+```{bash, eval = FALSE}
+git fetch
+git diff main origin/main
+```
+
+\
+
+**Komentojen selitys**:
+
+1. Ensimmäinen komento `git fetch` varmistaa, että Git päivittää tiedot etähakemiston tilasta ilman, että se yhdistää niitä paikalliseen versioon.
+    -  Tiedot tallennetaan pelkkää tarkastelua varten paikallisesti Gitin hallinnoimaan piilotettuun `.git/`-hakemistoon.
+  
+2. Toinen komento `git diff main origin/main` näyttää yksityiskohtaiset erot paikallisen päähaaran (*main*) ja etähakemiston päähaaran (*origin/main*) välillä.
+
+\
+
+![](images/Jan-11-2025-01-02-06.mp4){width="80%"}
+
+**Video**. Erojen tarkastelu paikallisen ja etähakemiston välillä.
+
+\
+
+Tämä menetelmä on erityisen hyödyllinen, kun käyttäjä ei ole varma, mitkä tiedostot aiheuttavat ongelmia tai mitä muutoksia on tehty. Näin käyttäjä voi tarkastella muutoksia tiedostotason tarkkuudella ja tehdä tarvittavat korjaukset.
+
+**Tällainen tarkastelu ei ole aina välttämätöntä.** Jos käyttäjä tietää jo valmiiksi, mitkä tiedostot tai muutokset ovat ongelmallisia, tämä vaihe voidaan ohittaa. Esimerkiksi yksinkertaisissa projekteissa, joissa ristiriidan aiheuttaja on selkeä, kuten yksi tiedosto, tämä yksityiskohtainen tarkastelu ei ole tarpeen. Toisaalta, monimutkaisemmissa tilanteissa tai laajoissa projekteissa tämä menetelmä voi säästää aikaa ja auttaa havaitsemaan piileviä ongelmia.
+
+
+------------------------------------------------------------------------
+
+Divergent Git branches - ongelmasta ratkaisuun © 2025 by\
+Ville Langén is licensed under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1).
+
+[![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)

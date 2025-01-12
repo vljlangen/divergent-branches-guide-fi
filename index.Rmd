@@ -1,0 +1,76 @@
+---
+title: "Divergent Git branches - ongelmasta ratkaisuun"
+documentclass: book
+output:
+  bookdown::gitbook:
+    config:
+      toc:
+        scroll_highlight: yes
+        before: |
+          <li><a href="https://r-guide-in-english.netlify.app/"><i class="fa fa-language fa-fw"></i> English version<span></span></a></li>
+        after: |
+          <li><a href="https://bookdown.org/">Proudly published with bookdown</a></li>
+author: Ville Langén
+date: "`r format(Sys.time(), '%d.%m.%Y')`"
+description: "Opas Gitin käyttöön tieteellisissä projekteissa, joissa keskitytään toimimaan yhden päähaaran sisällä."
+editor_options: 
+  markdown: 
+    wrap: 72
+
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+<br> <br> <br>
+
+# Esipuhe
+
+Tässä e-kirjassa esittelen, kuinka Gitin haarojen erkaantuminen eli *divergent branches* -ongelma on helposti ratkaistavissa pienissä Git-projekteissa, joissa tavoitteena on toimia pääasiassa lähinnä yhden saman päähaaran sisällä.
+
+## Kenelle tämä kirja on tarkoitettu?
+
+Tämä kirja on suunnattu tutkijoille, datatieteilijöille ja
+ohjelmoijille, jotka käyttävät Gitiä tieteellisissä projekteissaan ja
+haluavat syventää osaamistaan haarojen hallinnasta.
+
+## Rakenne
+
+Kirja on jaettu kolmeen osaan:
+
+1. Gitin toiminnan ja haarautumisen ymmärtäminen (kappaleet \@ref(one-or-many-brances), \@ref(no-divergences) ja \@ref(divergences))
+
+2. Kolme eri menetelmää divergoituneiden haarojen hallintaan (kappaleet \@ref(method-one), \@ref(method-two) ja \@ref(method-three))
+
+3. Yhteenveto-osio - ***[johon kiireisimmät voivat siirtyä suoraan](#summary)!*** 🏃🙂
+
+\
+
+Seuraavassa luvussa sukellamme Gitin perusteisiin ja sen toimintaan
+haarautumisessa.
+
+\
+
+------------------------------------------------------------------------
+
+Divergent Git branches - ongelmasta ratkaisuun © 2025 by
+Ville Langén is licensed under the [CC BY-SA
+4.0](https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1).
+
+[![CC BY-SA
+4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+
+```{js, echo = FALSE}
+title=document.getElementById('header');
+title.innerHTML = title.innerHTML + '<br>' + '<br>' + '<img src="images/cover_photo.jpeg" alt="Test Image">' +
+    '<figcaption style="font-size: 0.9em; color: gray; margin-top: 5px;">' + 'Image credit: <a href="https://www.pexels.com/photo/cherry-blossom-tree-932409/" target="_blank">Pexels</a>' + '</figcaption>' + '<br>' + '<br>' + '<p><em>This e-book is available also <a href="https://r-guide-in-english.netlify.app/" target="_blank">in English.</a></em></p>'
+
+```
+
+
+

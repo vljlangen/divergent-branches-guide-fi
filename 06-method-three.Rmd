@@ -1,0 +1,58 @@
+# Korjausmetodi 3: kloonaus{#method-three}
+
+<br><br> <img src="images/cloning.jpg" alt="Test Image" style="max-width: 100%; height: auto;"/>
+
+<figcaption style="font-size: 0.9em; color: gray; margin-top: 5px;">
+
+Image credit: <a href="https://www.pexels.com/photo/people-posing-in-costumes-with-golden-masks-15498630/" target="_blank">Pexels</a>
+
+</figcaption>
+
+<br><br>
+
+Jos edelliset korjausmenetelmät eivät toimi tai sovellu käytettäviksi, voit aina aloittaa puhtaalta pöydältä kloonaamalla uuden version etähakemistosta. Samalla tämä paitsi tuo mukanaan puhtaan version projektistasi myös poistaa ongelmat ja ristiriidat, joita paikallisen Git-hakemiston kanssa oli.
+
+
+## Työvaiheet
+
+1. Ensimmäinen askel on mennä GitHub-repositorioon, jonka haluat kloonata. Siirry GitHubissa repositoriosivulle ja klikkaa "Code"-painiketta. Valitse sen jälkeen "HTTPS" ja kopioi URL-osoite leikepöydälle.
+
+\
+
+![](images/Jan-11-2025-01-16-58.mp4){width="80%"}
+
+**Video**. Etähakemiston URL-osoitteen kopioiminen leikepöydälle GitHubissa.
+
+
+
+
+
+\
+
+\
+
+2. Seuraavaksi valitse RStudiossa "New Project" → "Version Control" → "Git". Liitä juuri kopioitu URL-osoite "Repository URL" -kenttään, paina tietokoneen näppäimistösi Tabulaattori-näppäntä ja muokkaa kansion nimi haluamaasi muotoon. Voit esimerkiksi lisätä numeron "2" alkuperäisen nimen perään, jotta se eroaa vanhasta ongelmallisesta repositoriosta.
+
+\
+
+
+![](images/Jan-11-2025-01-18-33.mp4){width="120%"}
+
+**Video**. Etähakemiston kloonaaminen RStudiossa.
+
+\
+
+\
+
+## Yhteenveto
+
+Uuden repositorion kloonaaminen on varma tapa ratkaista ongelmia, jotka liittyvät paikallisen ja etäversion välisiin ristiriitoihin. Tämä menetelmä takaa puhtaan lähtökohdan, jolloin voit jatkaa projektin työstämistä ilman aiempia teknisiä esteitä. Se soveltuu erityisesti tilanteisiin, joissa paikallisen hakemiston ongelmat ovat vaikeasti korjattavissa ja muut menetelmät, kuten *git reset*, eivät sovellu käytettäviksi.
+
+\
+
+------------------------------------------------------------------------
+
+Divergent Git branches - ongelmasta ratkaisuun © 2025 by\
+Ville Langén is licensed under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1).
+
+[![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)

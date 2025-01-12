@@ -1,0 +1,73 @@
+# Yhteenveto{#summary}
+
+<br><br> <img src="images/summary.jpg" alt="Test Image" style="max-width: 100%; height: auto;"/>
+
+<figcaption style="font-size: 0.9em; color: gray; margin-top: 5px;">
+
+Image credit: <a href="https://www.pexels.com/photo/person-holding-a-book-3832028/" target="_blank">Pexels</a>
+
+</figcaption>
+
+<br><br>
+
+
+Git-haarojen ristiriitojen ratkaisemiseen on useita menetelmiä, ja niiden soveltaminen riippuu tilanteen monimutkaisuudesta:
+
+\
+
+1. Joskus yksinkertainen komento `git config pull.rebase false` ja uusi pull-commit-push -toimintojen sarja riittävät ratkaisemaan ongelman.
+
+   `git config pull.rebase false` -komento ajetaan Terminalissa:
+    
+\
+
+```{bash, eval = FALSE}
+git config pull.rebase false
+```
+
+\
+
+\
+
+2. Monimutkaisemmissa tilanteissa käyttäjän saattaa olla tarpeen kopioida uudet paikalliset muokkaukset vaikkapa työpöydälle ja suorittaa **hard reset**, joka palauttaa paikallisen hakemiston vastaamaan etähakemiston tilaa.
+
+   Suoritettavat komennot ajetaan Terminalissa:
+   
+\
+
+```{bash, eval = FALSE}
+git fetch
+git reset --hard origin/main
+```
+
+\
+
+\
+
+3. Jos mikään muu ei auta, uuden kloonin tekeminen etähakemistosta on aina varma ja lopullinen ratkaisu, joka poistaa kaikki ristiriidat.
+
+\
+
+![](images/Jan-11-2025-01-16-58.mp4){width=47.9%} ![](images/Jan-11-2025-01-18-33.mp4){width=47.9%}
+
+\
+
+\
+
+
+Näiden menetelmien avulla saat Git-projektisi taas hallintaasi.
+
+\
+
+Kiitos, että luit tämän oppaan Git-haarojen ongelmien ratkaisusta. Git voi joskus tuntua haastavalta, mutta kuten tässä oppaassa on todettu, jokainen ongelma on ratkaistavissa.
+
+Onnea matkaan Git-projektiesi parissa!
+
+\
+
+------------------------------------------------------------------------
+
+Divergent Git branches - ongelmasta ratkaisuun © 2025 by\
+Ville Langén is licensed under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1).
+
+[![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
